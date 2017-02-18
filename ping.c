@@ -636,7 +636,7 @@ int pr(char *buf, int psize)
                         if (!(S_AVG & 0xFF))
                                 S_AVG = ms;
                         else
-                                S_AVG = (S_AVG + ms) >> 1;
+                                S_AVG = (S_AVG + ms) / 2;
 
                         return 1;
                 }
